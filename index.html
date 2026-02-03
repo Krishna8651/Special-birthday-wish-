@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special Birthday Wishes</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="confetti-container" id="confettiContainer"></div>
+    
+    <div class="container">
+        <header>
+            <h1 class="floating">Happy Birthday!</h1>
+            <p class="subtitle">A magical wish just for you</p>
+        </header>
+        
+        <div class="birthday-card">
+            <div class="cake">
+                <div class="cake-layer layer-bottom"></div>
+                <div class="cake-layer layer-top"></div>
+                <div class="icing"></div>
+                <div class="cherry"></div>
+            </div>
+            
+            <div class="message" id="birthdayMessage">
+                May your day be filled with <span class="highlight">joy</span>, 
+                your year with <span class="highlight">success</span>, 
+                and your life with <span class="highlight">love</span>.
+                Wishing you the most wonderful birthday!
+            </div>
+            
+            <div class="name-input">
+                <input type="text" id="userName" placeholder="Enter your name">
+                <button class="btn" id="personalizeBtn">Personalize Wish</button>
+            </div>
+            
+            <div class="interactive-area" id="candleContainer">
+                <!-- Candles will be generated here -->
+            </div>
+            
+            <div class="wishes-counter">
+                <p>This wish has been viewed <span class="counter-number" id="viewCount">0</span> times</p>
+                <p>Made with <span class="heart">❤️</span> for your special day</p>
+            </div>
+        </div>
+        
+        <footer>
+            <p>This magical birthday wish will forever be in your heart</p>
+        </footer>
+    </div>
+    
+    <div class="music-control">
+        <div class="music-btn" id="musicToggle">
+            <i class="fas fa-music"></i>
+        </div>
+    </div>
+
+    <audio id="birthdayAudio" loop>
+        <source src="https://assets.mixkit.co/music/preview/mixkit-happy-birthday-to-you-443.mp3" type="audio/mpeg">
+    </audio>
+    
+    <script src="script.js"></script>
+</body>
+</html>
